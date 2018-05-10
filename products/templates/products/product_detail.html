@@ -2,6 +2,19 @@
 
 {% block content %}
 
-<h1>{{product.name}}</h1>
+<div class="jumbotron" style="padding:10px; margin-top:10px;"><h1>{{product.name}}</h1></div>
+
+<section>
+	<form>
+		<div class="form-group">
+			<label for="description">Description</label>
+			<input id="description" class="form-control" type="text" placeholder="Readonly input here…" readonly value="{{product.description}}">
+			<label for="description">Quantity</label>
+			<input id="description" class="form-control" type="text" placeholder="Readonly input here…" readonly value="{{product.quantity}}">
+			<label for="description">Price</label>
+			<input id="description" class="form-control" type="text" placeholder="Readonly input here…" readonly value="{{product.price}}">
+		</div>
+	</form>
+</section>
 
 {% endblock %}
