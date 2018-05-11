@@ -19,6 +19,12 @@ python manage.py makemigrations
 
 python manage.py migrate
 
+#Remove old reports
+
+rm -r reports/
+
+rm -r htmlcov/
+
 # Run tests
 
 py.test --junitxml=reports/junit.xml
@@ -30,3 +36,4 @@ deactivate
 #Delete venv
 
 rm -r venv/
+
