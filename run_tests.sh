@@ -4,9 +4,9 @@ export SECRET_KEY='foobarbaz'
 
 # Create/Activate virtualenv
 
-virtualenv venv2
+virtualenv venv
 
-source venv2/bin/activate
+source venv/bin/activate
 
 # Install Requirements
 
@@ -29,4 +29,4 @@ deactivate
 
 #Delete venv
 
-rm -r venv2/
+rm -r venv/
