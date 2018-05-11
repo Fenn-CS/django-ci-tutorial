@@ -21,7 +21,7 @@ python manage.py migrate
 
 # Run tests
 
-py.test --cov --cov-report=html --junitxml=reports/junit.xml
+py.test --cov --cov-report=html
 
 # Deactivate venv
 
