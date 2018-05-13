@@ -2,4 +2,4 @@
 # Run test and generate xml report!
 ./run_tests.sh --pylint 
 
-py.test --pylint -m pylint > ./reports/pylint.log || true
+pylint --disable=W1202 --output-format=parseable --reports=no app products testing > reports/pylint.log || true
