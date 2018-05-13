@@ -1,33 +1,4 @@
 #!/bin/bash
-# This is a comment!
-export SECRET_KEY='foobarbaz'
-
-# Create/Activate virtualenv
-
-virtualenv venv
-
-source venv/bin/activate
-
-# Install Requirements
-
-pip install -r requirements.txt
-
-# Make Migrations
-python manage.py makemigrations
-
-# Migrate
-
-python manage.py migrate
-
-# Run tests
-
-py.test --junitxml=reports/junit.xml
-
-# Deactivate venv
-
-deactivate
-
-#Delete venv
-
-rm -r venv/
+# Run test and generate xml report!
+./run_tests.sh --junitxml=reports/junit.xml
 

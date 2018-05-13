@@ -1,5 +1,5 @@
 #!/bin/bash
-# This is a comment!
+# Export secret key
 export SECRET_KEY='foobarbaz'
 
 # Create/Activate virtualenv
@@ -19,14 +19,7 @@ python manage.py makemigrations
 
 python manage.py migrate
 
-# Run tests
+# Run tests, $1, $2, $3 ... allow for command line argurments
 
-py.test
+py.test $1 $2 $3 $4 $5
 
-# Deactivate venv
-
-deactivate
-
-#Delete venv
-
-rm -r venv/
