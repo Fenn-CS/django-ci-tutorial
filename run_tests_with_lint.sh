@@ -2,4 +2,4 @@
 # Run test and generate xml report!
 ./run_tests.sh --pylint 
 
-pylint > ./reports/pylint.log || true
+py.test --pylint -m pylint > ./reports/pylint.log || true

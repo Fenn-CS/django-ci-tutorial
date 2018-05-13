@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run test and produce all reports!
-./run_tests py.test --cov --cov-report=html --junitxml=reports/junit.xml
+./run_tests.sh --cov --cov-report=html --junitxml=reports/junit.xml
 
-pylint > ./reports/pylint.log || true
+py.test --pylint -m pylint > ./reports/pylint.log || true
 
